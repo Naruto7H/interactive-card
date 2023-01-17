@@ -130,16 +130,15 @@ input[name=cvc]{
 
 input:invalid{
     border-color: red;
-    animation: shake 200ms, ease-in-out;
 
 }
 
-@keyframes shake {
+/* @keyframes shake {
     0% {marginleft:-5px}
     25% {margin-left: 0px;}
     70%{margin-left: 5px;}
     100%{margin-left: 0px;}  
-}
+} */
 
 input p {
     display: none;
@@ -177,7 +176,7 @@ small{
 .response{
     text-align: center;
     margin-inline: auto;
-    
+    padding-top: 7.5em;  
 }
 .btn-continue{
     width:170px;
@@ -220,6 +219,11 @@ small{
             margin-top:50px;
             z-index: -1;
         }
+}
+@media (max-width: 898px) and (orientation:landscape) {
+    .container-form{
+        padding-top: 8.2em;
+    }
 }
 
 @media (min-width:899px) {
